@@ -1,0 +1,112 @@
+// sass:map
+@use "sass:map";
+
+// Import Rubik from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+//Set the variable
+$font-main: 'Rubik', sans-serif;
+
+$colors: (
+    px_brand_primary:#135799,
+    px_brand_primary_light:#7FA2C9,
+    px_brand_blue:#6C25FF,
+    px_brand_blue_light:#6C25FF4B ,
+    px_brand_red:#E87668,
+    px_brand_red_light:#fdf2f0,
+    px_brand_secondary_light: #FFFDF6,
+
+    //My colors
+    px_black:#1D2226,
+    px_gray_bg:#F7F8F9,
+    px_gray: #CBCBCB,
+    px_placeholder: #919191,
+    px_white:#FFFFFF,
+    error:red,
+);
+
+$sm: 768px;
+$lg: 1024px;
+$xl: 1441px;
+
+@mixin fourk {
+    @media (min-width: 2200px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin mini {
+    @media (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (min-width: 1080px) {
+        @content;
+    }
+}
+
+@mixin layout-adjust {
+    @media (min-width: 1250px) {
+        @content;
+    }
+}
+
+@mixin from-tab {
+    @media (min-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin till-large {
+    @media (max-width: 1180px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: 680px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width: 540px) {
+        @content;
+    }
+}
+
+@mixin tiny {
+    @media (max-width: 400px) {
+        @content;
+    }
+}
+
+@function color($color-name) {
+    @return map.get($colors, $color-name);
+}

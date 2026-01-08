@@ -1,0 +1,127 @@
+
+@use "sass:map";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* 1. Layout Centering Logic */
+body {
+    line-height: 1;
+    background-color: color(px_white);
+    font-family: $font-main;
+}
+
+/* 2. The 375px Mobile Container (Vite Root) */
+#root {
+    width: 100%;
+    max-width: 375px; 
+    background-color: color(px_gray_bg);
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 3. Base Element Styling */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+ins {
+    background-color: rgba(color(px_brand_red), 0.3);
+    color: color(px_black);
+    text-decoration: none;
+}
+
+mark {
+    background-color: rgba(color(px_brand_red), 0.3);
+    color: color(px_black);
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;  
+    border-top: 1px solid color(px_light_border);
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select, button, textarea {
+    vertical-align: middle;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/* 4. Global Box Sizing */
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; // Better mobile UX
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

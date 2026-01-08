@@ -1,0 +1,113 @@
+.px_sign_in {
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px;
+    
+    .px_title {
+        font-size: 27px;
+        font-weight: 600;
+        color: color(px_black);
+        margin-bottom: 10px;
+        line-height: 1.3;
+    }
+
+    .px_text {
+        max-width: 250px;
+        font-size: 18px;
+        line-height: 1.3;
+        font-weight: 400;
+        color: rgba($color: color(px_black), $alpha: 0.6);
+        margin-bottom: 30px;
+    }
+
+    .px_form {
+        .px_input_wrapper {
+            margin-bottom: 20px;
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
+
+            .px_input_wrap {
+
+                .input_container {
+                    position: relative;
+                    border: 1px solid color(px_gray);
+                    border-radius: 6px;
+                    height: 40px;
+                    background: color(px_white);
+
+                    &:focus-within {
+                        border: 1px solid color(px_brand_blue);
+                    }
+
+                    .floating_label {
+                        position: absolute;
+                        top: -9px;
+                        left: 12px;
+                        background: color(px_gray_bg);
+                        padding: 0 3px;
+                        font-size: 13px;
+                        color: color(px_brand_blue);
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    .px_input {
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        outline: none;
+                        font-size: 14px;
+                        background: transparent;
+                        padding: 0 15px;
+                        border-radius: 8px;
+
+                        &::placeholder {
+                            color: color(px_placeholder);
+                        }
+                    }
+                }
+
+                .error_msg {
+                    color: color(error);
+                    margin-top: 5px;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .px_login_btn {
+        width: 100%;
+        height: 46px;
+        text-align: center;
+        background-color: color(px_brand_blue);
+        color: color(px_white);
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+
+        &.px_disabled {
+            background: color(px_gray);
+            color: color(px_white);
+            cursor: not-allowed;
+        }
+    }
+
+    .px_create_btn {
+        width: 100%;
+        height: 46px;
+        text-align: center;
+        background-color: color(px_brand_blue_light);
+        color: color(px_black);
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+}

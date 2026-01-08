@@ -1,0 +1,65 @@
+{
+  "sign_in": {
+    "email": {
+      "label": "Email Address",
+      "placeholder": "Enter email address",
+      "errors": {
+        "required": "email is required",
+        "valid": "please enter valid email",
+        "max": "email must be at most 250 characters"
+      }
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter password",
+      "errors": {
+        "required": "password is required",
+        "max": "password must be at most 16 characters"
+      }
+    }
+  },
+  "sign_up": {
+    "full_name": {
+      "label": "Full Name*",
+      "placeholder": "Enter your full name",
+      "errors": {
+        "required": "full name is required"
+      }
+    },
+    "phone": {
+      "label": "Phone number*",
+      "placeholder": "Enter phone number",
+      "errors": {
+        "required": "phone number is required",
+        "valid": "enter a valid phone number"
+      }
+    },
+    "email": {
+      "label": "Email address*",
+      "placeholder": "Enter email address",
+      "errors": {
+        "required": "email is required",
+        "valid": "enter a valid email"
+      }
+    },
+    "password": {
+      "label": "Password*",
+      "placeholder": "Enter password",
+      "errors": {
+        "required": "password is required",
+        "min": "minimum 8 characters",
+        "max": "maximum 16 characters"
+      }
+    },
+    "company": {
+      "label": "Company name",
+      "placeholder": "Enter company name"
+    },
+    "agency": {
+      "label": "Are you an Agency?",
+      "errors": {
+        "required": "please select an option"
+      }
+    }
+  }
+}
