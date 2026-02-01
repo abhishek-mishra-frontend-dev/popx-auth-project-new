@@ -20,14 +20,14 @@
   },
   "sign_up": {
     "full_name": {
-      "label": "Full Name*",
+      "label": "Full Name",
       "placeholder": "Enter your full name",
       "errors": {
         "required": "full name is required"
       }
     },
     "phone": {
-      "label": "Phone number*",
+      "label": "Phone number",
       "placeholder": "Enter phone number",
       "errors": {
         "required": "phone number is required",
@@ -35,7 +35,7 @@
       }
     },
     "email": {
-      "label": "Email address*",
+      "label": "Email address",
       "placeholder": "Enter email address",
       "errors": {
         "required": "email is required",
@@ -43,7 +43,7 @@
       }
     },
     "password": {
-      "label": "Password*",
+      "label": "Password",
       "placeholder": "Enter password",
       "errors": {
         "required": "password is required",
